@@ -1,12 +1,18 @@
+¡import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-
+import { AppRoutingModule } from './app-routing.module';
+import { HomeViewComponent } from './home-view/home-view.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HomeViewComponent
+  ],
   imports: [
-    CommonModule
-  ]
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [HomeViewComponent]
 })
-export class HomeModule { }
+export class AppModule { }
