@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
+import { Injectable } from '@angular/core';
+import { NbLayoutComponent, NbThemeService } from '@nebular/theme';
 @Component({
   selector: 'app-home-view',
-  standalone: true,
-  imports: [],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })

@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+              "node_modules/@nebular/theme/styles/prebuilt/dark.css", 
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              ],
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
