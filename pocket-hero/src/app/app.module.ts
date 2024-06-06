@@ -24,7 +24,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbSidebarModule,
     NbStepperModule,
     NbMenuModule.forRoot(),
-    NbCardModule
+    NbCardModule,
     
   ],
   providers: [NbSidebarService],
