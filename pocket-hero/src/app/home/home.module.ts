@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { RouterModule } from '@angular/router';
-import { NbLayoutModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbLayoutModule, NbMenuItem, NbMenuModule, NbSidebarModule, NbStepperModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,14 @@ import { NbLayoutModule } from '@nebular/theme';
   imports: [
     CommonModule,
     RouterModule,
-    NbLayoutModule
+    NbLayoutModule,
+    NbButtonModule,
+    NbSidebarModule,
+    NbStepperModule,
+    NbMenuModule.forRoot(),
+    NbCardModule
+
+
   ]
 })
 export class HomeModule { }

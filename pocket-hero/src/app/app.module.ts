@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { AppRoutesModule } from './app.routes'; // Import AppRoutesModule
 import { HomeModule } from './home/home.module';
 import { ProfileModule } from './profile/profile.module';
-import { NbThemeModule } from '@nebular/theme';
+import { NbCardModule, NbIconModule, NbMenuModule, NbSidebarModule, NbSidebarService, NbStepperModule, NbThemeModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,15 @@ import { NbThemeModule } from '@nebular/theme';
     NbThemeModule.forRoot({ name: 'dark' }),
     HomeModule,
     ProfileModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbSidebarModule,
+    NbStepperModule,
+    NbMenuModule.forRoot(),
+    NbCardModule
+    
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
