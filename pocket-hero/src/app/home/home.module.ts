@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { RouterModule } from '@angular/router';
 import { NbButtonModule, NbCardModule, NbLayoutModule, NbMenuItem, NbMenuModule, NbSidebarModule, NbStepperModule } from '@nebular/theme';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
-    HomeViewComponent
+    HomeViewComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,
