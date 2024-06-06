@@ -52,4 +52,17 @@
       font-size: 2vw;
     }
   }
+
+  .social-icons {
+    margin-top: 05%;
+    margin-left: 35%;
+    display: flex;
+    justify-content: space-between;
+    width: 250px; /* Adjust as needed */
+  }
+  
+  .social-icons a img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+  }
   
