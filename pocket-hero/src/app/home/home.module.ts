@@ -1,20 +1,19 @@
+// src/app/home/home.module.ts
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { RouterModule } from '@angular/router';
-import { NbLayoutModule, NbThemeService } from '@nebular/theme';
-
+import { NbLayoutModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
-    HomeViewComponent,
+    HomeViewComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    NbLayoutModule,
-    NbThemeService.forRoot({ name: 'dark' })
-
+    NbLayoutModule
   ]
 })
 export class HomeModule { }

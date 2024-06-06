@@ -1,12 +1,10 @@
+// src/app/profile/profileview/profileview.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-profileview',
-  standalone: true,
-  imports: [],
   templateUrl: './profileview.component.html',
-  styleUrl: './profileview.component.css'
+  styleUrls: ['./profileview.component.css']
 })
-export class ProfileviewComponent {
-
-}
+export class ProfileviewComponent { }
