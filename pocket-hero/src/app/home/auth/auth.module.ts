@@ -9,7 +9,7 @@ import {
   NbCheckboxModule,
   NbInputModule
 } from '@nebular/theme';
-
+import { NgxAuthRoutingModule } from '.auth/ngx-auth-routing.module'; // Ensure this import is correct
 
 @NgModule({
   imports: [
@@ -20,12 +20,11 @@ import {
     NbInputModule,
     NbButtonModule,
     NbCheckboxModule,
-    NgxAuthRoutingModule,
+    NgxAuthRoutingModule, 
     NbAuthModule,
   ],
   declarations: [
-
+    // Add declarations here if needed
   ],
 })
-export class NgxAuthModule {
-}
+export class NgxAuthWrapperModule { } // Renamed to avoid conflict
