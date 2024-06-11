@@ -6,12 +6,14 @@ import { HomeViewComponent } from './home-view/home-view.component';
 import { RouterModule } from '@angular/router';
 import { NbButtonModule, NbCardModule, NbLayoutModule, NbMenuItem, NbMenuModule, NbSidebarModule, NbStepperModule } from '@nebular/theme';
 import { FaqComponent } from './faq/faq.component';
+import { PocketFooterComponent } from '../pocket-footer/pocket-footer.component';
+
 
 @NgModule({
   declarations: [
     HomeViewComponent,
-    FaqComponent
-  ],
+    FaqComponent, 
+  PocketFooterComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -20,7 +22,7 @@ import { FaqComponent } from './faq/faq.component';
     NbSidebarModule,
     NbStepperModule,
     NbMenuModule.forRoot(),
-    NbCardModule
+    NbCardModule,
 
 
   ]

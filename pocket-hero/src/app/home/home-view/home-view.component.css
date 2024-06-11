@@ -6,32 +6,42 @@
 
   }
   
+
   .image-container img {
-    width: 100%;
-    height: 50%;
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: center; 
   }
   
   .image-container .image-text {
     position: absolute;
     top: 40%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Spectral', serif;
     left: 25%;
     transform: translate(-50%, -50%);
     line-height: 200%;
     color: white;
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .image-container .image-text:hover {
+    transform: translate(-50%, -50%) scale(1.05); 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Enhances the shadow effect on hover */
   }
 
   .text-under-image {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    width: 70%;
+    width: 90%;
     text-align: center;
-    margin-left: 15%;
+    margin-left: 5%;
     overflow: auto;
     z-index: 1;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(255, 254, 254);
     text-align: center;
     padding: 20px;
@@ -40,7 +50,8 @@
   p
   {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    line-height:normal;
     color: rgb(255, 254, 254);
     text-align: center;
     padding: 20px;
@@ -67,9 +78,30 @@
   }
 
  #logo {
-    margin-top: 1%;
+    margin-top: -4%;
     font-family: 'Spectral', serif;
     font-size: 40px;
 
   }
 
+  h1 {
+    font-family: 'Spectral', serif;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    font-size: 45px;
+    line-height: 80%;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  h1:hover {
+    color: #ff3d71; /* Change to your preferred hover color */
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.5); /* Adds a shadow effect */
+    
+  }
+
+  .login-link {
+    color: #fff; /* Adjust the color as needed */
+    text-decoration: none;
+    margin-left: 75%; /* Adjust spacing as needed */
+    text-align: end;
+  }

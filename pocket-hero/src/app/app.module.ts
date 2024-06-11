@@ -8,11 +8,11 @@ import { NbCardModule, NbIconModule, NbMenuModule, NbSidebarModule, NbSidebarSer
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
+import { PocketFooterComponent } from './pocket-footer/pocket-footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-  ],
+    AppComponent  ],
   imports: [
     BrowserModule,
     AppRoutesModule,
