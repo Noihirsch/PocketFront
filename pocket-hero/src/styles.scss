@@ -1,0 +1,12 @@
+
+@import '@nebular/theme/styles/global/_styles.scss';
+nb-layout {
+  ::ng-deep nb-layout-column {
+    background-color: #228be1;
+  }
+
+}
+
+nb-sidebar nb-menu {
+  font-size: 50px; 
+}
